@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Expenses chart component</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <div class="text-sm text-white">My balance</div>
+          <div class="text-md text-bold text-white">$921.48</div>
+        </div>
+        <div>
+          <img src="./images/logo.svg" alt="logo image" />
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="text-md text-bold text-brown">Spending - Last 7 days</div>
+          <div class="chart-container">
+            <h2>Loading chart...</h2>
+            <!-- Chart goes here  -->
+            <!-- <div class="col">
+              <div class="stat text-white">$56.41</div>
+              <div class="bar" style="height: 51px"></div>
+              <div class="day text-xs text-gray">mon</div>
+            </div> -->
+          </div>
+        </section>
+        <div class="separator"></div>
+        <section>
+          <div class="text-sm text-gray">Total this month</div>
+          <div class="flex">
+            <div class="text-lg text-bold text-brown">$478.33</div>
+            <div style="text-align: right">
+              <div class="text-sm text-bold text-brown">+2.4%</div>
+              <div class="text-sm text-gray">from last month</div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/SushilCodes" target="_blank"
+        >Sushilkumar Bodade</a
+      >.
+    </div>
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+  </body>
 </html>
